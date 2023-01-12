@@ -1,0 +1,16 @@
+﻿using System.Runtime.InteropServices;
+{{#each .References}}
+using {{.}};
+{{/each}}
+
+namespace {{.Namespace}}
+{
+    public class {{.Class}}
+    {
+        {{#each .EntryPoints}}
+        [DllImport(@"{{DLL}}", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.StdCall, SetLastError = true)]
+        public static extern {{Signature}};
+
+        {{/each}}
+    }
+}

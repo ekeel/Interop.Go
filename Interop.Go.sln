@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ekeel.Interop.Go", "Ekeel.Interop.Go\Ekeel.Interop.Go.csproj", "{55CC75F9-0DDA-4559-89DF-20A7ADA5342D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F6F4922-0420-47C3-BFF1-3924FB856871}"
+	ProjectSection(SolutionItems) = preProject
+		license.txt = license.txt
+		README.md = README.md
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{F5CAE7C8-BE2C-47FF-B845-9BDB600BDFA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55CC75F9-0DDA-4559-89DF-20A7ADA5342D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CC75F9-0DDA-4559-89DF-20A7ADA5342D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CC75F9-0DDA-4559-89DF-20A7ADA5342D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CC75F9-0DDA-4559-89DF-20A7ADA5342D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CAE7C8-BE2C-47FF-B845-9BDB600BDFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CAE7C8-BE2C-47FF-B845-9BDB600BDFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CAE7C8-BE2C-47FF-B845-9BDB600BDFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CAE7C8-BE2C-47FF-B845-9BDB600BDFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {40768E4C-5569-417A-A4EE-317C5D77489F}
+	EndGlobalSection
+EndGlobal

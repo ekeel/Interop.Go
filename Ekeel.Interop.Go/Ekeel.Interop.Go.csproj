@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+		<PackageId>Ekeel.Interop.Go</PackageId>
+		<Description>Allows for import and use of Go libraries.</Description>
+		<Authors>ekeel</Authors>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>1.0.0</Version>
+		<SynchReleaseVersion>false</SynchReleaseVersion>
+		<PackageProjectUrl>https://github.com/ekeel/Interop.Python</PackageProjectUrl>
+		<PackageLicenseFile>license.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/ekeel/Interop.Go</RepositoryUrl>
+    </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Ekeel.Interop.Stdlib" />
+    <None Remove="Handlebars.Net" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Templates\" />
+    <None Remove="Resources\Templates\StaticClass.tmpl" />
+    <None Remove="Resources\Templates\SharedMethods.tmpl" />
+    <None Remove="Resources\Templates\CSProj.tmpl" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Ekeel.Interop.Stdlib" Version="1.0.3" />
+    <PackageReference Include="Handlebars.Net" Version="2.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Templates\StaticClass.tmpl" />
+    <EmbeddedResource Include="Resources\Templates\SharedMethods.tmpl" />
+    <EmbeddedResource Include="Resources\Templates\CSProj.tmpl" />
+  </ItemGroup>
+</Project>
